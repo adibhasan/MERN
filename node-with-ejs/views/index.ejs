@@ -1,0 +1,12 @@
+<ul>
+    <% for(let person of people) { %>
+        <li>
+            <% if(person.name.split(" ")[0] === "Adib"){ %>
+                This is adib: <%= person.name %>
+            <% }else{ %>
+                This is not adib <%= person.name %>
+            <% } %>
+        </li>
+    <% } %>
+</ul>
+<h1>This is index child layout</h1>
